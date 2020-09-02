@@ -9,7 +9,7 @@ ul, li {
 html,
 body {
     height: 100%;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -76,29 +76,19 @@ body {
     }
 
     // show-plc start
-    #show-plc {
+    #forum-box {
         float: left;
         position: relative;
         width: 97%;
         height: 100%;
         background-color: black;
-
-        #show-logo {
-            position: absolute;
-            top: 10%;
-            right: 10%;
-            width: 8%;
-            height: 12%;
-            background-color: white;
-        }
-
-        #show-content {
-            position: absolute;
-            top: 40%;
-            right: 15%;
-            width: 25%;
-            height: 40%;
-            background-color: white;
+        overflow: auto;
+        
+        div {
+            width: 80%;
+            height: 30%;
+            background-color: purple;
+            margin: 1% 0;
         }
 
     }
