@@ -6,10 +6,13 @@ ul,
 li {
   list-style: none;
 }
+html {
+  max-width: 1500px;
+  min-width: 800px;
+}
 html,
 body {
   height: 100%;
-  overflow: hidden;
 }
 #main {
   width: 100%;
@@ -20,13 +23,14 @@ body {
   float: left;
   width: 3%;
   height: 100%;
-  background-color: yellow;
 }
 #main #nav-bar #nav-card {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 0;
   width: 100%;
   height: 100%;
-  transform: translateX(-250%);
+  transform: translate(-250%, -50%);
 }
 #main #nav-bar #nav-card #nav-main {
   float: left;
@@ -69,11 +73,79 @@ body {
   background-color: black;
   overflow: auto;
 }
-#main #forum-box div {
+#main #forum-left {
   width: 80%;
-  height: 30%;
+  width: grey;
+  float: left;
+}
+#main #forum-left #forum-editor {
+  width: 100%;
+  height: 200px;
+  background-color: green;
+}
+#main #forum-left #forum-content {
+  width: 100%;
   background-color: purple;
-  margin: 1% 0;
+}
+#main #forum-left #forum-content div.forum-comment {
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+#main #forum-left #forum-content div.forum-comment div.cmt-flag {
+  height: 100%;
+  width: 3%;
+  background-color: yellow;
+  float: left;
+}
+#main #forum-left #forum-content div.forum-comment div.cmt-main {
+  width: 97%;
+  float: left;
+}
+#main #forum-left #forum-content div.forum-comment div.cmt-main div.user-bio {
+  width: 100%;
+  overflow: hidden;
+}
+#main #forum-left #forum-content div.forum-comment div.cmt-main div.user-bio div.user-pto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  float: left;
+}
+#main #forum-left #forum-content div.forum-comment div.cmt-main div.user-bio div.user-info {
+  float: left;
+}
+#main #forum-left #forum-content div.forum-comment div.cmt-main div.user-bio div.user-info div.user-name {
+  font-size: 18px;
+}
+#main #forum-left #forum-content div.forum-comment div.cmt-main div.user-bio div.user-info div.user-tag {
+  font-size: 14px;
+}
+#main #forum-left #forum-content div.forum-comment div.cmt-main div.cmt-content {
+  width: 100%;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+#main #forum-right {
+  width: 20%;
+  float: left;
+}
+#main #forum-right #forum-hotpic {
+  width: 100%;
+  background-color: orange;
+}
+#main #forum-right #forum-hotpic div.hotpic-img {
+  width: 100%;
+  height: 150px;
+  background-color: aqua;
+}
+#main #forum-right #forum-hotpic div.hotpic-ttl {
+  font-size: 18px;
+}
+#main #forum-right #forum-hotpic div.hotpic-content {
+  font-size: 14px;
+  word-wrap: break-word;
 }
 #toolbar {
   width: 100%;
@@ -87,8 +159,8 @@ body {
 }
 #toolbar ul li {
   float: left;
-  width: 10%;
-  height: 100%;
-  margin: 0 1%;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
   background-color: white;
 }
