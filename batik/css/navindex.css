@@ -12,6 +12,7 @@ body {
   height: 100%;
   max-width: 1600px;
   min-width: 800px;
+  overflow: hidden;
 }
 #header {
   width: 100%;
@@ -23,30 +24,56 @@ body {
   height: 15%;
   position: relative;
   background-color: green;
-  overflow: hidden;
+}
+#top-gallery #scroll {
+  width: 200%;
+  height: 100%;
+  animation: scroll-left 20s linear 0s infinite normal;
 }
 #top-gallery ul {
   width: 100%;
   height: 100%;
-}
-#top-gallery li {
   float: left;
-  width: 10%;
+}
+#top-gallery ul li {
+  float: left;
+  width: 5%;
   height: 100%;
 }
-#top-gallery li #glr-1,
-#top-gallery li #glr-3,
-#top-gallery li #glr-5,
-#top-gallery li #glr-7,
-#top-gallery li #glr-9 {
+#top-gallery ul li:nth-child(2n) div {
   width: 100%;
   height: 100%;
   background-color: blue;
+}
+#top-gallery ul li:nth-child(2n+1) div {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+#top-gallery ul li:nth-child(10) div,
+#top-gallery ul li:nth-child(20) div {
+  background-color: green!important;
+}
+#top-gallery ul li:hover div {
+  position: relative;
+  z-index: 99;
+  animation: scale-up 500ms forwards;
+}
+#top-gallery #scroll:hover {
+  animation-play-state: paused;
 }
 #main {
   width: 100%;
   height: 80%;
   position: relative;
+}
+#detl {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  width: 300px;
+  height: 150px;
+  background-color: black;
 }
 #menu {
   position: absolute;
@@ -67,11 +94,15 @@ body {
   width: 25%;
   height: 100%;
   float: left;
+  background-color: red;
 }
 #menu li:nth-child(2n) div {
   width: 100%;
   height: 100%;
   background-color: green;
+}
+#menu li:hover {
+  animation: scale-up 500ms forwards;
 }
 #toolbar {
   position: fixed;
@@ -106,4 +137,21 @@ body {
   width: 200px;
   height: 150px;
   background-color: black;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  }
 }
