@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a"></div>
+    <!-- <div class="1"></div>
+    <div class="2"></div>
+    <div class="3"></div>
+    <div class="4"></div>
+    <div class="5"></div>
+    <div class="6"></div> -->
+</body>
+<script>
+    // var boxArr = document.querySelectorAll('div');
+    // for (i=0; i< boxArr.length; i++) {
+    //     boxArr[i].style.height = (i+1) * 25 + 'px';
+    //     boxArr[i].style.width = boxArr[i].style.height;
+    //     boxArr[i].style.backgroundColor = '#000';
+    //     boxArr[i].style.borderRadius = '50%';
+    // }
+
+    function hotSpot(box, duration = 3000, fresh = 10) {
+        console.log('yes')
+        box.style.position = 'absolute';
+        var dot = document.createElement('div');
+        box.appendChild(dot);
+        
+        dot.style.borderRadius = '50%';
+        dot.style.height = '0px';
+        dot.style.width = '0px';
+        dot.style.position = 'absolute';
+        dot.style.left = '50%';     dot.style.top = '50%';
+        dot.style.transform = 'translate(-50%, -50%)';
+        dot.style.backgroundColor = 'black';
+        var step = duration / fresh;
+        var speed = (box.offsetHeight / step >= 1) ? box.offsetHeight / step : 1;
+        
+        var sprDot = setInterval(function() {
+            var currD = dot.offsetHeight;
+
+            if ((box.offsetHeight - currD) <= 5) {
+                dot.style.height = box.style.height;
+                dot.style.width = dot.style.height;
+                console.log('done')
+                clearInterval(sprDot);
+            } else {
+                dot.style.height = dot.offsetHeight + speed + 'px';
+                console.log('pro');
+            }
+            dot.style.width = dot.style.height;
+        }, fresh)
+
+    }
+    var box = document.querySelector('.a');
+    box.style.width = '150px';
+    box.style.height = box.style.width;
+    hotSpot(box);
+</script>
+<!-- <script>
+    var box = document.querySelector('.test');
+    box.style.borderRadius = '50%';
+    box.style.backgroundColor = 'black';
+    box.style.height = '0px';
+    box.style.width = '0px';
+    
+    var step = 500;
+    var sprDot = setInterval(function() {
+        var currD = box.offsetHeight;
+        var speed = Math.round(500 / step) 
+        if ((500 - currD) <= 10) {
+            box.style.width = '500px';
+            box.style.height = '500px';
+            clearInterval(sprDot);
+        } else {
+            box.style.height = currD + speed + 'px';
+            box.style.width = box.style.height;
+        }
+    }, 10)
+</script> -->
+</html>
