@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/hotspot.css">
+    <style>
+        .a {
+            /* width: 100px; */
+            height: 100px;
+        }
+        .b {
+            width: 100px; height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .c {
+            width: 50%;    height: 50%;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a" level=6></div>
+    <div class="b">
+        <div class="c"></div>
+    </div>
+    <script src="landing.js"></script>
+    <script>
+        var box = document.querySelector('.a');
+        hotSpot(box, 4000);
+    </script>
+</body>
+</html>

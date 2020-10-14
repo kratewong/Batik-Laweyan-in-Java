@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .a {
+            height: 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/hotspot.css">
 </head>
 <body>
     <div class="a"></div>
@@ -13,7 +19,7 @@
     <div class="4"></div>
     <div class="5"></div>
     <div class="6"></div> -->
-</body>
+    <script src="landing.js"></script>
 <script>
     // var boxArr = document.querySelectorAll('div');
     // for (i=0; i< boxArr.length; i++) {
@@ -23,43 +29,14 @@
     //     boxArr[i].style.borderRadius = '50%';
     // }
 
-    function hotSpot(box, duration = 3000, fresh = 10) {
-        console.log('yes')
-        box.style.position = 'absolute';
-        var dot = document.createElement('div');
-        box.appendChild(dot);
-        
-        dot.style.borderRadius = '50%';
-        dot.style.height = '0px';
-        dot.style.width = '0px';
-        dot.style.position = 'absolute';
-        dot.style.left = '50%';     dot.style.top = '50%';
-        dot.style.transform = 'translate(-50%, -50%)';
-        dot.style.backgroundColor = 'black';
-        var step = duration / fresh;
-        var speed = (box.offsetHeight / step >= 1) ? box.offsetHeight / step : 1;
-        
-        var sprDot = setInterval(function() {
-            var currD = dot.offsetHeight;
-
-            if ((box.offsetHeight - currD) <= 5) {
-                dot.style.height = box.style.height;
-                dot.style.width = dot.style.height;
-                console.log('done')
-                clearInterval(sprDot);
-            } else {
-                dot.style.height = dot.offsetHeight + speed + 'px';
-                console.log('pro');
-            }
-            dot.style.width = dot.style.height;
-        }, fresh)
-
-    }
+    
     var box = document.querySelector('.a');
-    box.style.width = '150px';
-    box.style.height = box.style.width;
-    hotSpot(box);
+    hotSpot(box, 2000);
 </script>
+</body>
+
+
+
 <!-- <script>
     var box = document.querySelector('.test');
     box.style.borderRadius = '50%';

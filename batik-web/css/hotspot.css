@@ -1,0 +1,18 @@
+@keyframes hotSpot {
+    0% {
+        width: 0;   height: 0;
+    }
+    100% {
+        width: 100%;    height: 100%;
+    }
+}
+.hotSpot-box {
+    display: flex!important;
+    justify-content: space-around!important;
+    align-items: center!important;
+    border: 0!important;      padding: 0!important;
+}
+.hotSpot {
+    display: block!important;
+    border-radius: 50%!important;
+}
