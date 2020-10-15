@@ -46,6 +46,10 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
+#left-nav .nav-content .nav-stories {
+  background-color: rgba(150, 95, 40, 0.8);
+  color: #fff;
+}
 #right-topic {
   position: relative;
   width: 75%;
@@ -91,12 +95,15 @@
   background-size: cover;
 }
 #right-topic .ct-nav-box .mask {
+  width: 100%;
+  height: 100%;
   word-wrap: break-word;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bolder;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #right-topic .cnbox1 {
   background-image: url(../img/icon-featured\ content.png);

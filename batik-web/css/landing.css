@@ -25,18 +25,20 @@
 #contents .cls-title {
   width: 100%;
   height: 15%;
-  background-color: #000;
   font-size: 50px;
   font-weight: bolder;
-  color: aliceblue;
+  color: #fff;
   text-align: center;
 }
-#contents .numbers {
+#contents .number-box {
   position: absolute;
-  left: 5%;
-  bottom: 10%;
+  z-index: 6;
+  right: 5%;
+  top: 5%;
   font-size: 30px;
   font-weight: bold;
+  text-align: right;
+  color: #fff;
 }
 #dots {
   position: absolute;
@@ -78,13 +80,13 @@
 .skip-btn {
   position: absolute;
   z-index: 99;
-  right: 1%;
-  bottom: 20%;
+  right: 0;
+  bottom: 10%;
   width: 10%;
   height: 10%;
   background-color: rgba(0, 0, 0, 0.4);
   font-size: 30px;
   font-weight: bolder;
-  color: aliceblue;
+  color: #fff;
   text-align: center;
 }

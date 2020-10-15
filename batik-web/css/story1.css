@@ -45,28 +45,19 @@
 #core-story .video-content {
   position: absolute;
   box-sizing: border-box;
-  width: 300px;
+  width: 500px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 15px;
   font-size: 14px;
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(228, 186, 131, 0.568);
+  color: #977b53;
+  font-weight: bold;
+  background-color: rgba(190, 177, 163, 0.8);
   z-index: 2;
 }
 #core-story .play-button {
-  position: absolute;
-  z-index: 2;
-  width: 150px;
-  box-sizing: border-box;
-  padding: 10px;
-  font-size: 15px;
-  text-align: center;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(66, 66, 66, 0.3);
   left: 0;
   bottom: 3%;
 }
@@ -83,7 +74,7 @@
   left: 3%;
   top: 3%;
 }
-#small-widgets-left .small-wide-widget .w-t-2 {
+#small-widgets-left .small-wide-widget .play-button {
   right: 3%;
   bottom: 3%;
 }
@@ -93,7 +84,7 @@
 }
 #small-widgets-right {
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 #small-widgets-right .small-high-widget {
   position: relative;
@@ -101,27 +92,23 @@
   height: 50%;
 }
 #small-widgets-right .w-t-3 {
-  top: 2%;
-  right: 2%;
+  top: 1%;
+  right: 1%;
+  font-size: 50px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
 }
 #small-widgets-right .w-t-4 {
-  left: 2%;
-  bottom: 2%;
-}
-#skip-button {
-  width: 100%;
-  height: 10%;
-  background-color: #000;
-  position: relative;
-}
-#skip-button .skip-btn {
-  position: absolute;
-  height: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 5%;
-  font-size: 25px;
-  color: #fff;
+  width: 40%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #381005;
+  background-color: rgba(231, 203, 162, 0.7);
+  text-align: center;
+  padding: 5% 0;
+  right: 0;
+  top: 0;
 }
 .widget-bg {
   position: absolute;
@@ -134,4 +121,17 @@
   color: #fff;
   padding: 10px;
   z-index: 2;
+}
+.play-button {
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
 }

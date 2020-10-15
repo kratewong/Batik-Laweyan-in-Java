@@ -47,28 +47,22 @@
         .video-content {
             position: absolute;
             box-sizing: border-box;
-            width: 300px;
+            width: 500px;
             left: 50%;      
             top: 50%;       transform: translate(-50%, -50%);
             padding: 15px;
-            font-size: 14px;    text-align: center;
+            font-size: 14px;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(228, 186, 131, 0.568);
+            color: rgb(151, 123, 83);
+            font-weight: bold;
+            background-color: rgba(190, 177, 163, 0.8);
             z-index: 2;
         }
         // play-button
         .play-button {
-            position: absolute;
-            z-index: 2;
-            width: 150px;
-            box-sizing: border-box;
-            padding: 10px;
-            font-size: 15px;    text-align: center;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(66, 66, 66, .3);
             left: 0;    bottom: 3%;
         }
+        
     }
 
     // widgets-wide
@@ -84,7 +78,7 @@
             .w-t-1 {
                 left: 3%;   top: 3%;
             }
-            .w-t-2 {
+            .play-button {
                 right: 3%;  bottom: 3%;
             }
         }
@@ -98,33 +92,37 @@
     height: 100%;
 }
 #small-widgets-right {
-    width: 100%;    height: 90%;
+    width: 100%;    height: 100%;
     .small-high-widget {
         position: relative;
         width: 100%;    height: 50%;
     }
-    .w-t-3 {
-        top: 2%;
-        right: 2%;
+    .sketchfab-embed-wrapper {
+        width: 100%;    
+    }
+    .widget-3 {
+        iframe {
+            width: 800px;    height: 100%;
+            position: absolute;
+            z-index: 5;
+        }
+        
+    }
     }
     .w-t-4 {
-        left: 2%;
-        bottom: 2%;
+        width: 40%;
+        font-size: 30px;    font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(56, 16, 5);
+        // word-wrap: break-word;
+        background-color: rgba(231, 203, 162, .7);
+        text-align: center;
+        padding: 5% 0;
+        right: 0;
+        top: 0;
     }
 }
-#skip-button {
-    width: 100%;    height: 10%;
-    background-color: #000;
-    position: relative;
-    .skip-btn {
-        position: absolute;
-        height: 30px;
-        top: 50%;   transform: translateY(-50%);
-        right: 5%;
-        font-size: 25px;
-        color: #fff;
-    }
-}
+
 
 // widget common style
 .widget-bg {
@@ -138,3 +136,22 @@
     padding: 10px;
     z-index: 2;
 }
+
+.play-button {
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 15px;    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+   
+}
+.forward {
+    top: 1%;
+    right: 1%;
+    font-size: 50px;    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
