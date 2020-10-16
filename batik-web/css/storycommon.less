@@ -1,0 +1,260 @@
+// main-display-area, 96% height
+
+#main-content {
+    position: relative;
+    width: 100%;    height: 96%;
+}
+
+// left-main-content: stroy1-video + random 2 widgets-wide
+
+#huge-left {
+    width: 70%;    height: 100%;
+}
+    // core-story video
+    // core-story = relative
+    #core-story {
+        position: relative;
+        width: 100%;    height: 60%;
+
+        // video-img  level0
+        .video-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        // mask level1
+        .mask {
+            position: absolute;
+            width: 100%;    height: 100%;
+            z-index: 1;
+            background-color: rgba(100, 91, 84, 0.4);
+        }
+
+        // level2
+        // video-title  level2
+        .video-title {
+            position: absolute;     z-index: 2;
+            left: 50%;  transform: translateX(-50%);
+            top: 10%;
+            font-size: 50px;      font-weight: bolder;
+            font-family: perpetua ,Arial, Helvetica, sans-serif;
+            color: #7a5f38;
+            
+        }
+
+        // video-content  level2
+        .video-content {
+            position: absolute;     z-index: 2;
+            box-sizing: border-box;
+            width: 500px;
+            left: 50%;      
+            top: 50%;       transform: translate(-50%, -50%);
+            padding: 15px;
+            font-size: 14px;
+            font-family: perpetua ,Arial, Helvetica, sans-serif;
+            color: rgb(151, 123, 83);
+            font-weight: bold;
+            background-color: rgba(190, 177, 163, 0.8);
+        }
+
+        // play-button in core-story-video level2 (position)
+        .play-button {
+            z-index: 2;
+            left: 0;    bottom: 3%;
+        }
+    }
+    // core-story video part ends
+
+
+    // widgets-wide （left)
+    #small-widgets-left {
+    width: 100%;    height: 40%;
+
+    // small-wide-widget relative
+    .small-wide-widget {
+        position: relative;
+        width: 50%;    height: 100%;
+
+        // left-content down-right widget 2nd widget position
+        .play-button {
+            z-index: 2;
+            right: 3%;  bottom: 3%;
+        }
+
+    }
+    }
+    // widgets-wide (left) ends
+
+//-------------------left-content ends----------------------
+
+
+// right-main-content: random 2 widgets-high
+#huge-right {
+    width: 30%;
+    height: 100%;
+}
+
+    #small-widgets-right {
+    width: 100%;    height: 100%;
+
+        .small-high-widget {
+            position: relative;
+            width: 100%;    height: 50%;
+        }
+        
+        .start-btn {
+            font-size: 100px;
+            color: rgba(255, 255, 255, 0.6);
+            z-index: 2;
+            display: none;
+        }
+
+        // right-content down-widget's content box
+        .w-t-4 {
+        width: 40%;
+        font-size: 30px;    font-weight: bold;
+        font-family: perpetua ,Arial, Helvetica, sans-serif;
+        color: rgb(56, 16, 5);
+        background-color: rgba(231, 203, 162, .7);
+        text-align: center;
+        padding: 5% 0;
+        right: 0;
+        top: 0;
+        }
+    }
+// -------------------right part ends---------------------
+
+// common components style
+.widget-bg {
+    position: absolute;
+    width: 100%; height: 100%;
+    z-index: 0;
+}
+
+.widget-title {
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    z-index: 2;
+}
+
+.play-button {
+    position: absolute;
+    width: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 15px;    text-align: center;
+    font-weight: bold;
+    font-family: perpetua ,Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);  
+}
+
+.start-btn {
+    position: absolute;
+    top: 50%;   left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    em {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.close-btn {
+    top: 2%;    left: 2%;
+    position: absolute;
+    width: 5%;  height: 5%;
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+
+// ======================================================
+
+// absolute button style
+.back {
+    position: absolute;
+    z-index: 10;
+    top: 2%;    left: 2%;
+    font-size: 50px;    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);;
+}
+
+.forward {
+    position: absolute;
+    z-index: 10;
+    top: 2%;    right: 2%;
+    font-size: 50px;    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+//  =====================================================
+
+// alert window
+.sketchfab-embed-wrapper {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 20;
+    width: 100%; 
+    height: 100%; 
+    display: none;
+
+    background-color: rgba(0, 0, 0, .9);
+
+        .close-btn {
+            z-index: 21;
+            font-size: 25px;
+
+        }
+        .iframe-box {
+            position: absolute;
+            width: 90%;    height: 80%;
+            left: 50%;       top: 50%;   
+            transform: translate(-50%, -50%);
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+.video-window {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 20;
+    width: 100%; 
+    height: 100%; 
+    display: none;
+
+    background-color: rgba(0, 0, 0, .9);
+
+    .close-btn {
+        z-index: 21;
+        font-size: 25px;
+    }
+    .iframe-box {
+        position: absolute;
+        width: 90%;    height: 80%;
+        left: 50%;       top: 50%;   
+        transform: translate(-50%, -50%);
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+

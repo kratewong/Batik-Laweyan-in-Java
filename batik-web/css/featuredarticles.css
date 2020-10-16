@@ -27,7 +27,7 @@
   border-bottom: 1px solid #3f3f3f;
   font-size: 18px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: perpetua, Arial, Helvetica, sans-serif;
   color: aliceblue;
 }
 #article-field {
@@ -40,7 +40,7 @@
   background-image: url(../upload/index-topic.png);
 }
 #article-field .atc-box {
-  flex: 0 0 33%;
+  flex: 0 0 33.33%;
   height: 50%;
   background-color: #a29282;
 }
@@ -57,15 +57,15 @@
   height: 30%;
 }
 #article-field .atc-box .atc-info .atc-cls {
-  padding: 5px 8px;
+  padding: 2%;
   font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: perpetua, Arial, Helvetica, sans-serif;
   color: aliceblue;
 }
 #article-field .atc-box .atc-info .atc-title {
-  padding: 5px 8px;
-  font-size: 18px;
+  padding: 2%;
+  font-size: 22px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: perpetua, Arial, Helvetica, sans-serif;
   color: aliceblue;
 }

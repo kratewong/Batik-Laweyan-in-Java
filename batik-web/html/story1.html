@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WIB</title>
+    <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/bottom-bar.css">
     <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/story1.css">
+    <link rel="stylesheet" href="../css/storycommon.css">
     <link rel="stylesheet" href="../css/icomoon.css">
+    <link rel="stylesheet" href="../css/story1.css">
 
 </head>
 <body>
-
+    <audio id="bgm" autoplay="autoplay" loop="loop" preload="auto">
+        <source src="../upload/bgm.mpeg" type="audio/mpeg">
+    </audio>
+    
+    <!-- main-display-area, 96% height -->
     <section id="main-content">
 
+        <!-- left=vedio + 2 widgets-wide -->
         <section id="huge-left" class="fl">
+
+            <!-- videoimg-l0 & mask-l1 & title+content+playbtn-l2 -->
             <section id="core-story">
                 <!-- level-0 -->
                 <div class="video-img">
                     <img src="../upload/story-1-img.png" alt="">
                 </div>
+
                 <!-- level-1 -->
                 <div class="mask"></div>
 
@@ -33,53 +43,80 @@
                     <br/>
                     Batik is the technically and artistically demanding tradition of wax-resist dyeing (aka Laweyan ) . And it also refers to the cloth made using this technique. 
                 </div>
-                <div class="play-button">
+                <div class="play-button video-1-btn">
                     PLAY VIDEO
                 </div>
 
             </section>
+            <!-- video end -->
+
+            <!-- widgets-left-container no position -->
             <section id="small-widgets-left">
+                <!-- relative -->
                 <div class="small-wide-widget widget-1 fl">
+                    <!-- img level0 -->
                     <img src="../upload/story-1-w-1.png" alt="" class="widget-bg">
-                    <p class="widget-title w-t-1">
-                        Kalimantan
-                    </p>
                 </div>
+
+                <!-- relative -->
                 <div class="small-wide-widget widget-2 fl">
+                    <!-- img level0 -->
                     <img src="../upload/story-1-w-2.png" alt="" class="widget-bg">
-                    <p class="play-button">
+                    <!-- playbtn level2 -->
+                    <div class="play-button video-2-btn">
                         PLAY VIDEO
-                    </p>
-                </div>
-
-            </section>
-        </section>
-
-        <section id="huge-right" class="fl">
-            <section id="small-widgets-right">
-                <div class="small-high-widget widget-3">
-                    <div class="sketchfab-embed-wrapper">
-                        <iframe title="A 3D model" src="https://sketchfab.com/models/967f791229f041618e9c67eaa7262b54/embed?autostart=0&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=1&amp;ui_watermark_link=1" 
-                        frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-                            <a href="https://sketchfab.com/3d-models/batik-textile-967f791229f041618e9c67eaa7262b54?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Batik Textile</a>
-                            by <a href="https://sketchfab.com/bodyasechoes?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Body As Echoes</a>
-                            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-                        </p>
                     </div>
-                    
-                </div>
-                <div class="small-high-widget widget-4">
-                    <img src="../upload/story-1-w-4.png" alt="" class="widget-bg">
-                    <p class="widget-title w-t-4">
-                        Making Process
-                    </p>
                 </div>
             </section>
+            <!-- widgets end -->
+
         </section>
+        <!-- left-part end -->
+
+        <!-- right = 2 widgets-high -->
+        <section id="huge-right" class="fl">
+
+            <!-- right widgets big container no position -->
+            <section id="small-widgets-right">
+                
+                <!-- relative -->
+                <div class="small-high-widget widget-3 model-3d">
+
+                    <!-- img level0 -->
+                    <img src="../upload/story-1-w-3.png" alt="" class="widget-bg">
+                    
+                    <!-- start-btn level2 -->
+                    <div class="start-btn">
+                        <em class="icomoon"></em>
+                    </div>
+
+                </div>
+
+                <!-- relative -->
+                <div class="small-high-widget widget-4  content-window-btn">
+                    <!-- img level0 -->
+                    <img src="../upload/story-1-w-4.png" alt="" class="widget-bg">
+
+                    <!-- content level2 -->
+                    <div class="widget-title w-t-4">
+                        Making Process
+                    </div>
+                </div>
+
+            </section>
+            <!-- right container end -->
+
+        </section>
+        <!-- right-part end -->
 
     </section>
+    <!-- main-content end -->
 
+
+    <!-- ----------------------------------------------- -->
+
+
+    <!-- bottom-tool-bar-area, 4% height -->
     <section id="bottom-bar">
         <section id="navigation" class="fl line-height">
             <div class="icon fl"><em class="icomoon"></em></div>
@@ -96,14 +133,87 @@
             @copyright by Jerome
         </section>
     </section>
+    <!-- bottom-tool-bar end -->
+
+
+    <!-- ----------------------------------------------- -->
+
+
+    <!-- absolute button -->
+    <!-- back-btn   left-top-corner level10 -->
     <p class="back">
-        <em class="icomoon"></em>
+        <em class="icomoon"></em>
     </p>
+
+    <!-- forward-btn right-top-corner level10 -->
     <p class="forward gotosty2">
         <em class="icomoon"></em>
     </p>
+    <!-- absolute button end -->
+
+
+    <!-- ----------------------------------------------- -->
+
+
+    <!-- link to alert window -->
+
+
+    <!-- iframe-level link with  -->
+    <div class="sketchfab-embed-wrapper iframe-3d-window">
+        <div class="close-btn">
+            <em class="icomoon"></em>
+        </div>
+        <div class="iframe-box">
+        <iframe title="A 3D model" src="https://sketchfab.com/models/967f791229f041618e9c67eaa7262b54/embed?autostart=0&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=1&amp;ui_watermark_link=1" 
+        frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <!-- <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+            <a href="https://sketchfab.com/3d-models/batik-textile-967f791229f041618e9c67eaa7262b54?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Batik Textile</a>
+            by <a href="https://sketchfab.com/bodyasechoes?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Body As Echoes</a>
+            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+        </p> -->
+        </div>
+    </div>
+
+    <div class="video-window video-1">
+        <div class="close-btn">
+            <em class="icomoon"></em>
+        </div>
+        <div class="iframe-box">
+            <iframe src="https://www.youtube.com/embed/8WmsjRkZCyE" frameborder="0"    allow="accelerometer; autoplay; clipboard-write;   encrypted-media; gyroscope; picture-in-picture"   allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="video-window video-2">
+        <div class="close-btn">
+            <em class="icomoon"></em>
+        </div>
+        <div class="iframe-box">
+            <iframe src="https://www.youtube.com/embed/ISzrwcJ2b6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="content-display-window">
+        <div class="close-btn">
+            <em class="icomoon"></em>
+        </div>
+        <div class="content-box">
+            <img src="../upload/step1.png" alt="">
+            <img src="../upload/step2.png" alt="">
+            <img src="../upload/step3.png" alt="">
+            <img src="../upload/step4.png" alt="">
+            <img src="../upload/step5.png" alt="">
+            <img src="../upload/step6.png" alt="">
+        </div>
+    </div>
+
+    <!-- video-level link with -->
     <script src="../js/lineheight.js"></script>
     <script src="../js/bottombar.js"></script>
-    <script src="../js/sty1.js"></script>
+    <script src="../js/story1.js"></script>
+    <script src="../js/storypages.js"></script>
+    
+    <!-- alert window end -->
+
+
 </body>
 </html>

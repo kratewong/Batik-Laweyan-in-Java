@@ -4,7 +4,7 @@ var styNavWebs = ['../html/story1.html',
     '#'];
 var centerNav = document.querySelector('.center-nav');
 var styNavs = centerNav.querySelectorAll('.sty');
-console.dir(styNavs);
+// console.dir(styNavs);
 for (var i = 0; i < styNavs.length; i++) {
     (function() {
         var theURL = styNavWebs[i]
@@ -13,3 +13,5 @@ for (var i = 0; i < styNavs.length; i++) {
         })
     })()
 }
+
+
