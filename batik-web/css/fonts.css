@@ -1,0 +1,12 @@
+@font-face {
+    font-family:'cursiva';
+    src: url('../fonts/cursiva.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'perpetua';
+    src: url('../fonts/Zoika-2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Featured Articles</title>
+    <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/bottom-bar.css">
     <link rel="stylesheet" href="../css/icomoon.css">
@@ -11,9 +12,13 @@
 
 </head>
 <body>
+    <audio id="bgm" autoplay="autoplay" loop="loop" preload="auto">
+        <source src="../upload/bgm.mpeg" type="audio/mpeg">
+    </audio>
+    
     <section id="main-content">
         <section id="left-nav" class="fl">
-            <div id="back-btn">
+            <div id="back-btn" class="back">
                 <em class="icomoon"></em>
             </div>
             <ul id="menu-list">
@@ -95,7 +100,7 @@
         </ul>
     </section>
     <section id="bottom-bar">
-        <section id="navigation" class="fl">
+        <section id="navigation" class="fl line-height">
             <div class="icon fl"><em class="icomoon"></em></div>
             <div class="icon fl"><em class="icomoon"></em></div>
             <div class="icon fl"><em class="icomoon"></em></div>
@@ -106,11 +111,12 @@
             <div class="volume fl ">5</div>
             <div class="minus fl ">-</div>
         </div>
-        <section id="copyright" class="fr">
+        <section id="copyright" class="fr line-height">
             @copyright by Jerome
         </section>
     </section>
     <script src="../js/lineheight.js"></script>
     <script src="../js/bottombar.js"></script>
+    <script src="../js/featuredpage.js"></script>
 </body>
 </html>

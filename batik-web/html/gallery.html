@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/bottom-bar.css">
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/gallery.css">
 </head>
 <body>
+    <audio id="bgm" autoplay="autoplay" loop="loop" preload="auto">
+        <source src="../upload/bgm.mpeg" type="audio/mpeg">
+    </audio>
+    
     <!-- body has a background image -->
     <section id="bgimage" class="fl">
         <img src="../upload/gallery-bg.png" alt="">
@@ -22,13 +27,13 @@
     <section id="main-content">
 
         <section id="headline" class="line-height">
-            <div class="w10 back fl">
+            <div class="w10 back fl line-height">
                 <em class="icomoon"></em>
             </div>
-            <div class="w80 title fl">
+            <div class="w80 title fl line-height">
                 Indonesian Batik Gallery
             </div>
-            <div class="w10 renew fl">
+            <div class="w10 fresh-btn fl line-height">
                 <em class="icomoon"></em>
             </div>
         </section>
@@ -74,5 +79,6 @@
     </section>
     <script src="../js/lineheight.js"></script>
     <script src="../js/bottombar.js"></script>
+    <script src="../js/gallery.js"></script>
 </body>
 </html>

@@ -1,0 +1,219 @@
+#main-content {
+  position: relative;
+  width: 100%;
+  height: 96%;
+}
+#huge-left {
+  width: 70%;
+  height: 100%;
+}
+#core-story {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+#core-story .video-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#core-story .video-img img {
+  width: 100%;
+  height: 100%;
+}
+#core-story .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(100, 91, 84, 0.4);
+}
+#core-story .video-title {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: perpetua, Arial, Helvetica, sans-serif;
+  color: #7a5f38;
+}
+#core-story .video-content {
+  position: absolute;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  font-size: 14px;
+  font-family: perpetua, Arial, Helvetica, sans-serif;
+  color: #977b53;
+  font-weight: bold;
+  background-color: rgba(190, 177, 163, 0.8);
+}
+#core-story .play-button {
+  z-index: 2;
+  left: 0;
+  bottom: 3%;
+}
+#small-widgets-left {
+  width: 100%;
+  height: 40%;
+}
+#small-widgets-left .small-wide-widget {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+#small-widgets-left .small-wide-widget .play-button {
+  z-index: 2;
+  right: 3%;
+  bottom: 3%;
+}
+#huge-right {
+  width: 30%;
+  height: 100%;
+}
+#small-widgets-right {
+  width: 100%;
+  height: 100%;
+}
+#small-widgets-right .small-high-widget {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+#small-widgets-right .start-btn {
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.6);
+  z-index: 2;
+  display: none;
+}
+#small-widgets-right .w-t-4 {
+  width: 40%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: perpetua, Arial, Helvetica, sans-serif;
+  color: #381005;
+  background-color: rgba(231, 203, 162, 0.7);
+  text-align: center;
+  padding: 5% 0;
+  right: 0;
+  top: 0;
+}
+.widget-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.widget-title {
+  position: absolute;
+  color: #fff;
+  padding: 10px;
+  z-index: 2;
+}
+.play-button {
+  position: absolute;
+  width: 150px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: perpetua, Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.start-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.start-btn em {
+  width: 100%;
+  height: 100%;
+}
+.close-btn {
+  top: 2%;
+  left: 2%;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  color: rgba(255, 255, 255, 0.8);
+}
+.back {
+  position: absolute;
+  z-index: 10;
+  top: 2%;
+  left: 2%;
+  font-size: 50px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+.forward {
+  position: absolute;
+  z-index: 10;
+  top: 2%;
+  right: 2%;
+  font-size: 50px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+.sketchfab-embed-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.sketchfab-embed-wrapper .close-btn {
+  z-index: 21;
+  font-size: 25px;
+}
+.sketchfab-embed-wrapper .iframe-box {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.sketchfab-embed-wrapper .iframe-box iframe {
+  width: 100%;
+  height: 100%;
+}
+.video-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.video-window .close-btn {
+  z-index: 21;
+  font-size: 25px;
+}
+.video-window .iframe-box {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-window .iframe-box iframe {
+  width: 100%;
+  height: 100%;
+}
