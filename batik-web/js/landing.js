@@ -154,6 +154,6 @@ var interval = setInterval(rim, totalFreshTime + 1000);
 
 skip.addEventListener('click', function() {
     clearInterval(interval)
-    location.assign('../html/index.html');
+    location.assign('../html/story1.html');
 
 });
